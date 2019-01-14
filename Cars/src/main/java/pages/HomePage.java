@@ -1,12 +1,17 @@
 package pages;
 
 import base.CommonAPI;
+import base.CommonClass;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 
-public class HomePage extends CommonAPI {
+public class HomePage extends CommonClass {
+
+    @FindBy(xpath ="//label[@id='profile_menu-avatar']")
+    WebElement logInIcon;
 
     @FindBy(xpath ="//a[contains(text(),'Cars for Sale')]")
     WebElement carsForSaleLink;
@@ -56,8 +61,13 @@ public class HomePage extends CommonAPI {
         PageFactory.initElements(driver,this);
     }
 
+    public boolean verifyLogInIcon(){
+       return logInIcon.isDisplayed();
+    }
+
     public String verifyHomePageTitle(){
-       return driver.getTitle();
+
+        return driver.getTitle();
     }
     public CarsForSalePage clickOnCarsForSaleLink(){
         carsForSaleLink.click();
@@ -72,7 +82,6 @@ public class HomePage extends CommonAPI {
         serviceAndRepairLink.click();
         return new ServiceAndRepairPage();
     }
-
 
     public void allBodyStyleDropDown() {
         Select s = new Select(allBodyDropDown);
@@ -92,14 +101,19 @@ public class HomePage extends CommonAPI {
     public void carPrice(){
         Select s = new Select(carPriceDropDown);
         s.selectByValue("35000");
+        boolean isSelected = carPriceDropDown.isSelected();
+        Assert.assertTrue(isSelected);
     }
     public void setRadiusDropDown(){
         Select s = new Select(nextRadius);
         s.selectByVisibleText("40 Miles from");
+        boolean isSelect = nextRadius.isSelected();
+        Assert.assertTrue(isSelect);
     }
 
 
     public void searchByBodyStyleTag(){
+
         searchByBodyStyle.click();
     }
 
@@ -128,6 +142,7 @@ public class HomePage extends CommonAPI {
         searchButton.click();
     }
     public boolean validateCarsImage(){
+
         return carsLogo.isDisplayed();
     }
 }

@@ -21,6 +21,7 @@ public class SignUpPage extends CommonAPI {
     WebElement signUpClick;
 
     public SignUpPage(){
+
         PageFactory.initElements(driver,this);
     }
 

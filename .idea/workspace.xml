@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="523c9872-1d47-4563-abaf-a9dbc280e25e" name="Default Changelist" comment="" />
+    <list default="true" id="523c9872-1d47-4563-abaf-a9dbc280e25e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Cars/confing.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cars/src/test/java/pagetest/CarsForSalePageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Generic/src/main/java/base/CommonClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Generic/src/main/java/base/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cars/src/main/java/pages/CarsForSalePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cars/src/main/java/pages/CarsForSalePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cars/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cars/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cars/src/main/java/pages/LogInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cars/src/main/java/pages/LogInPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cars/src/main/java/pages/SignUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cars/src/main/java/pages/SignUpPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cars/src/test/java/pagetest/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cars/src/test/java/pagetest/HomePageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cars/src/test/java/pagetest/LogInPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cars/src/test/java/pagetest/LogInPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cars/src/test/java/pagetest/SingUpPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cars/src/test/java/pagetest/SingUpPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cars/target/classes/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/Cars/target/classes/pages/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cars/target/classes/pages/LogInPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/Cars/target/classes/pages/LogInPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cars/target/classes/pages/SignUpPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/Cars/target/classes/pages/SignUpPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cars/target/test-classes/pagetest/HomePageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Cars/target/test-classes/pagetest/HomePageTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cars/target/test-classes/pagetest/LogInPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Cars/target/test-classes/pagetest/LogInPageTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cars/target/test-classes/pagetest/SingUpPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Cars/target/test-classes/pagetest/SingUpPageTest.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/Generic/target/" />
@@ -13,34 +32,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Generic/src/main/java/base/CommonAPI.java">
+        <entry file="file://$PROJECT_DIR$/Cars/src/test/java/pagetest/HomePageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="889">
-              <caret line="105" column="9" selection-start-line="105" selection-start-column="9" selection-end-line="105" selection-end-column="9" />
+            <state relative-caret-position="1606">
+              <caret line="103" column="37" selection-start-line="103" selection-start-column="37" selection-end-line="103" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Cars/src/main/java/pages/HomePage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1391">
-              <caret line="67" column="19" selection-start-line="67" selection-start-column="19" selection-end-line="67" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1186#1187#0" expanded="true" />
-                <element signature="e#1225#1226#0" expanded="true" />
-                <element signature="e#1311#1312#0" expanded="true" />
-                <element signature="e#1352#1353#0" expanded="true" />
-                <element signature="e#2084#2085#0" expanded="true" />
-                <element signature="e#2120#2121#0" expanded="true" />
-                <element signature="e#2160#2161#0" expanded="true" />
-                <element signature="e#2205#2206#0" expanded="true" />
+                <element signature="e#1658#1659#0" expanded="true" />
+                <element signature="e#1722#1723#0" expanded="true" />
+                <element signature="e#2480#2481#0" expanded="true" />
+                <element signature="e#2527#2528#0" expanded="true" />
+                <element signature="e#3130#3131#0" expanded="true" />
+                <element signature="e#3159#3160#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -56,18 +61,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Cars/src/test/java/pagetest/HomePageTest.java">
+        <entry file="file://$PROJECT_DIR$/Cars/src/main/java/pages/HomePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1474">
-              <caret line="67" column="24" lean-forward="true" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
+            <state relative-caret-position="315">
+              <caret line="104" column="34" selection-start-line="104" selection-start-column="34" selection-end-line="104" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#248#249#0" expanded="true" />
-                <element signature="e#284#285#0" expanded="true" />
-                <element signature="e#1300#1301#0" expanded="true" />
-                <element signature="e#1323#1324#0" expanded="true" />
-                <element signature="e#1264#1265#0" expanded="true" />
-                <element signature="e#1293#1294#0" expanded="true" />
+                <element signature="e#3568#3569#0" expanded="true" />
+                <element signature="e#3604#3605#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Cars/src/test/java/pagetest/CarsForSalePageTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="543">
+              <caret line="65" column="5" lean-forward="true" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#232#233#0" expanded="true" />
+                <element signature="e#252#253#0" expanded="true" />
+                <element signature="e#1036#1037#0" expanded="true" />
+                <element signature="e#1112#1113#0" expanded="true" />
+                <element signature="e#1196#1197#0" expanded="true" />
+                <element signature="e#1270#1271#0" expanded="true" />
+                <element signature="e#900#901#0" expanded="true" />
+                <element signature="e#929#930#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -76,8 +97,46 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Cars/src/main/java/pages/SignUpPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            <state relative-caret-position="462">
+              <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Cars/src/main/java/pages/LogInPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Cars/src/main/java/pages/CarsForSalePage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="53" column="5" lean-forward="true" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#684#685#0" expanded="true" />
+                <element signature="e#737#738#0" expanded="true" />
+                <element signature="e#788#789#0" expanded="true" />
+                <element signature="e#847#848#0" expanded="true" />
+                <element signature="e#896#897#0" expanded="true" />
+                <element signature="e#951#952#0" expanded="true" />
+                <element signature="e#1532#1533#0" expanded="true" />
+                <element signature="e#1568#1569#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Cars/src/test/java/pagetest/LogInPageTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -92,47 +151,14 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Cars/src/main/java/pages/LogInPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
-              <folding>
-                <element signature="e#867#868#0" expanded="true" />
-                <element signature="e#907#908#0" expanded="true" />
-                <element signature="e#1063#1064#0" expanded="true" />
-                <element signature="e#1096#1097#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Cars/src/main/java/pages/CarsForSalePage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Cars/src/test/java/pagetest/LogInPageTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="31" column="29" lean-forward="true" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
-              <folding>
-                <element signature="e#1105#1106#0" expanded="true" />
-                <element signature="e#1128#1129#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Cars/src/test/java/pagetest/SingUpPageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+            <state relative-caret-position="374">
+              <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+              <folding>
+                <element signature="e#335#336#0" expanded="true" />
+                <element signature="e#413#414#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -146,21 +172,29 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/Generic/pom.xml" />
         <option value="$PROJECT_DIR$/Cars/pom.xml" />
-        <option value="$PROJECT_DIR$/Cars/src/test/java/pagetest/SingUpPageTest.java" />
         <option value="$PROJECT_DIR$/Cars/src/test/resources/CarsRunner.xml" />
         <option value="$PROJECT_DIR$/Generic/src/main/java/base/CommonAPI.java" />
-        <option value="$PROJECT_DIR$/Cars/src/test/java/pagetest/LogInPageTest.java" />
-        <option value="$PROJECT_DIR$/Cars/src/test/java/pagetest/HomePageTest.java" />
-        <option value="$PROJECT_DIR$/Cars/src/main/java/pages/LogInPage.java" />
-        <option value="$PROJECT_DIR$/Cars/src/main/java/pages/CarsForSalePage.java" />
         <option value="$PROJECT_DIR$/Cars/src/main/java/pages/ServiceAndRepair.java" />
         <option value="$PROJECT_DIR$/Cars/src/main/java/pages/ServiceAndRepairPage.java" />
+        <option value="$PROJECT_DIR$/Cars/src/main/java/pages/SignUpPage.java" />
+        <option value="$PROJECT_DIR$/Cars/src/test/java/pagetest/SingUpPageTest.java" />
+        <option value="$PROJECT_DIR$/Cars/src/main/java/pages/LogInPage.java" />
+        <option value="$PROJECT_DIR$/Cars/confing.properties" />
+        <option value="$PROJECT_DIR$/Cars/src/test/java/pagetest/LogInPageTest.java" />
+        <option value="$PROJECT_DIR$/Generic/src/main/java/base/CommonClass.java" />
+        <option value="$PROJECT_DIR$/Generic/src/main/java/base/Util.java" />
+        <option value="$PROJECT_DIR$/Cars/src/main/java/pages/CarsForSalePage.java" />
+        <option value="$PROJECT_DIR$/Cars/src/test/java/pagetest/CarsForSalePageTest.java" />
+        <option value="$PROJECT_DIR$/Cars/src/test/java/pagetest/HomePageTest.java" />
         <option value="$PROJECT_DIR$/Cars/src/main/java/pages/HomePage.java" />
       </list>
     </option>
@@ -211,11 +245,13 @@
     <option name="width" value="980" />
     <option name="height" value="1040" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -291,6 +327,12 @@
               <item name="Auto3" type="b2602c69:ProjectViewProjectNode" />
               <item name="Auto3" type="462c0819:PsiDirectoryNode" />
               <item name="Generic" type="462c0819:PsiDirectoryNode" />
+              <item name="browser-driver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Auto3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Auto3" type="462c0819:PsiDirectoryNode" />
+              <item name="Generic" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -322,28 +364,29 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547353930353" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547444669543" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Elzat\IdeaProjects\Auto3\Cars\src\test" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="base" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Elzat\IdeaProjects\Auto3\Cars" />
       <recent name="C:\Users\Elzat\IdeaProjects\Auto3\Cars\src\test\resources" />
       <recent name="C:\Users\Elzat\IdeaProjects\Auto3\Cars\src\test\java" />
       <recent name="C:\Users\Elzat\IdeaProjects\Auto3\Cars\src\main\java" />
       <recent name="C:\Users\Elzat\IdeaProjects\Auto3\Generic\browser-driver" />
-      <recent name="C:\Users\Elzat\IdeaProjects\Auto3\Generic\src\main\java" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="base" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Elzat\IdeaProjects\Auto3\Cars\src\test" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -429,18 +472,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LogInPageTest - 2019.01.12 at 20h 48m 35s.xml">
-      <configuration name="LogInPageTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="LogInPageTest - 2019.01.12 at 20h 54m 45s.xml">
-      <configuration name="LogInPageTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="LogInPageTest - 2019.01.12 at 21h 01m 02s.xml">
-      <configuration name="LogInPageTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="LogInPageTest - 2019.01.12 at 21h 06m 40s.xml">
-      <configuration name="LogInPageTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="SingUpPageTest - 2019.01.12 at 21h 14m 36s.xml">
       <configuration name="SingUpPageTest" configurationId="TestNG" />
     </history-entry>
@@ -450,38 +481,59 @@
     <history-entry file="HomePageTest - 2019.01.12 at 21h 59m 38s.xml">
       <configuration name="HomePageTest" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="LogInPageTest - 2019.01.13 at 20h 52m 25s.xml">
+      <configuration name="LogInPageTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SingUpPageTest - 2019.01.13 at 20h 53m 53s.xml">
+      <configuration name="SingUpPageTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="HomePageTest - 2019.01.13 at 22h 06m 41s.xml">
+      <configuration name="HomePageTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="HomePageTest - 2019.01.13 at 22h 09m 53s.xml">
+      <configuration name="HomePageTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="HomePageTest - 2019.01.13 at 22h 16m 17s.xml">
+      <configuration name="HomePageTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="HomePageTest - 2019.01.13 at 22h 21m 16s.xml">
+      <configuration name="HomePageTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="HomePageTest - 2019.01.13 at 22h 29m 26s.xml">
+      <configuration name="HomePageTest" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21342282" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19194631" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.3286119" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.26345608" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" weight="0.3295302" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Mongo Explorer" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.17280453" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.3295302" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Mongo Explorer" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
   </component>
   <component name="editorHistoryManager">
@@ -519,13 +571,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Cars/src/main/java/pages/ServiceAndRepair.java" />
+    <entry file="file://$PROJECT_DIR$/Cars/confing.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Generic/src/main/java/base/Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Generic/src/main/java/base/CommonAPI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="889">
+        <state relative-caret-position="-786">
           <caret line="105" column="9" selection-start-line="105" selection-start-column="9" selection-end-line="105" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Generic/src/main/java/base/CommonClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -536,27 +610,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Cars/src/main/java/pages/SignUpPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Cars/src/main/java/pages/CarsForSalePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Cars/src/main/java/pages/ServiceAndRepair.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="47" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Cars/src/main/java/pages/ServiceAndRepairPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -564,67 +617,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Cars/src/main/java/pages/LogInPage.java">
+    <entry file="file://$PROJECT_DIR$/Cars/src/main/java/pages/SignUpPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
+        <state relative-caret-position="462">
+          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cars/src/main/java/pages/CarsForSalePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="53" column="5" lean-forward="true" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
           <folding>
-            <element signature="e#867#868#0" expanded="true" />
-            <element signature="e#907#908#0" expanded="true" />
-            <element signature="e#1063#1064#0" expanded="true" />
-            <element signature="e#1096#1097#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#684#685#0" expanded="true" />
+            <element signature="e#737#738#0" expanded="true" />
+            <element signature="e#788#789#0" expanded="true" />
+            <element signature="e#847#848#0" expanded="true" />
+            <element signature="e#896#897#0" expanded="true" />
+            <element signature="e#951#952#0" expanded="true" />
+            <element signature="e#1532#1533#0" expanded="true" />
+            <element signature="e#1568#1569#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Cars/src/main/java/pages/HomePage.java">
+    <entry file="file://$PROJECT_DIR$/Cars/src/main/java/pages/LogInPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1391">
-          <caret line="67" column="19" selection-start-line="67" selection-start-column="19" selection-end-line="67" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1186#1187#0" expanded="true" />
-            <element signature="e#1225#1226#0" expanded="true" />
-            <element signature="e#1311#1312#0" expanded="true" />
-            <element signature="e#1352#1353#0" expanded="true" />
-            <element signature="e#2084#2085#0" expanded="true" />
-            <element signature="e#2120#2121#0" expanded="true" />
-            <element signature="e#2160#2161#0" expanded="true" />
-            <element signature="e#2205#2206#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="203">
+          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Cars/src/test/java/pagetest/SingUpPageTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Cars/src/test/java/pagetest/LogInPageTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="31" column="29" lean-forward="true" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+        <state relative-caret-position="374">
+          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
           <folding>
-            <element signature="e#1105#1106#0" expanded="true" />
-            <element signature="e#1128#1129#0" expanded="true" />
+            <element signature="e#335#336#0" expanded="true" />
+            <element signature="e#413#414#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Cars/src/test/java/pagetest/HomePageTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1474">
-          <caret line="67" column="24" lean-forward="true" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
+        <state relative-caret-position="1606">
+          <caret line="103" column="37" selection-start-line="103" selection-start-column="37" selection-end-line="103" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#248#249#0" expanded="true" />
-            <element signature="e#284#285#0" expanded="true" />
-            <element signature="e#1300#1301#0" expanded="true" />
-            <element signature="e#1323#1324#0" expanded="true" />
-            <element signature="e#1264#1265#0" expanded="true" />
-            <element signature="e#1293#1294#0" expanded="true" />
+            <element signature="e#1658#1659#0" expanded="true" />
+            <element signature="e#1722#1723#0" expanded="true" />
+            <element signature="e#2480#2481#0" expanded="true" />
+            <element signature="e#2527#2528#0" expanded="true" />
+            <element signature="e#3130#3131#0" expanded="true" />
+            <element signature="e#3159#3160#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cars/src/test/java/pagetest/CarsForSalePageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="543">
+          <caret line="65" column="5" lean-forward="true" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#232#233#0" expanded="true" />
+            <element signature="e#252#253#0" expanded="true" />
+            <element signature="e#1036#1037#0" expanded="true" />
+            <element signature="e#1112#1113#0" expanded="true" />
+            <element signature="e#1196#1197#0" expanded="true" />
+            <element signature="e#1270#1271#0" expanded="true" />
+            <element signature="e#900#901#0" expanded="true" />
+            <element signature="e#929#930#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cars/src/test/java/pagetest/LogInPageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cars/src/main/java/pages/HomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="104" column="34" selection-start-line="104" selection-start-column="34" selection-end-line="104" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3568#3569#0" expanded="true" />
+            <element signature="e#3604#3605#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,5 +1,6 @@
 package pagetest;
 
+import base.CommonClass;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -8,13 +9,13 @@ import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.LogInPage;
 
-public class LogInPageTest extends LogInPage {
+public class LogInPageTest extends CommonClass {
  LogInPage logInPage;
  HomePage homePage;
 
  @BeforeMethod
- public void init(){
-
+ public void setUP(){
+     initialization();
      logInPage= PageFactory.initElements(driver, LogInPage.class);
  }
  @Test(priority = 1)
@@ -36,7 +37,7 @@ public class LogInPageTest extends LogInPage {
     public void logIntest(){
      logInPage.clickSingIn();
      logInPage.clickLogInLink();
-     homePage= logInPage.logIn();
+     homePage= logInPage.logIn(prop.getProperty("email"),prop.getProperty("password"));
  }
  @AfterMethod
     public void tearDown(){

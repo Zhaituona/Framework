@@ -11,7 +11,6 @@ public class SingUpPageTest extends SignUpPage {
     SignUpPage signUpPage;
     @BeforeMethod
     public void init(){
-
         signUpPage= PageFactory.initElements(driver, SignUpPage.class);
     }
     @Test

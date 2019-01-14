@@ -1,18 +1,39 @@
 package pagetest;
 
+import base.CommonClass;
+import base.Util;
 import org.openqa.selenium.support.PageFactory;
+import org.openxmlformats.schemas.presentationml.x2006.main.impl.CTTLCommonMediaNodeDataImpl;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import pages.CarsForSalePage;
 import pages.HomePage;
+import pages.LogInPage;
 
-public class HomePageTest extends HomePage {
+public class HomePageTest extends CommonClass {
     HomePage homePage;
+    LogInPage logInPage;
+    CarsForSalePage carsForSalePage;
+   // Util util;
+    // test case should be independent  with each other
 
-    @BeforeMethod
-    public void init(){
-        homePage= PageFactory.initElements(driver,HomePage.class);
+    @BeforeMethod  // cause every test is indivisual so for verify we have to login to the homepage , so set this as before method
+    public void setUp(){
+        initialization();
+      //  util = new Util();
+        logInPage =new LogInPage();
+        carsForSalePage = new CarsForSalePage();
+        //homePage= PageFactory.initElements(driver,HomePage.class);
+        logInPage.clickSingIn();
+        logInPage.clickLogInLink();
+        homePage= logInPage.logIn(prop.getProperty("email"),prop.getProperty("password"));
+    }
+    @Test
+    public void verifyHomePageTitleTest(){
+       String title = homePage.verifyHomePageTitle();
+       Assert.assertEquals(title,"Cars.com | Sign Up");
     }
     @Test
     public void carsImageLogo() {
@@ -20,9 +41,19 @@ public class HomePageTest extends HomePage {
         Assert.assertTrue(flag);
     }
     @Test
+    public void verifyLogInIconTest(){
+       boolean verify = homePage.verifyLogInIcon();
+       Assert.assertTrue(verify);
+    }
+
+    @Test
+    public void verifyCarsForSaleLinkTest(){
+     carsForSalePage = homePage.clickOnCarsForSaleLink();
+    }
+    @Test
     public void selectCarTypeDropDown() throws InterruptedException {
         homePage.carTypeDropDown();
-        homePage.clickSearchButton();
+       homePage.clickSearchButton();
     }
     @Test
     public void selectCarMakeDropDown(){
@@ -45,30 +76,34 @@ public class HomePageTest extends HomePage {
         homePage.clickSearchButton();
     }
     @Test
-    public void clickSearchByBodyStyle(){
+   public void clickSearchByBodyStyle(){
         homePage.searchByBodyStyleTag();
     }
-
     @Test
-    public void chooseAllBodyStyleDropDown(){
+    public void allBodyStyleDropDownTest(){
+        homePage.searchByBodyStyleTag();
         homePage.allBodyStyleDropDown();
         homePage.clickSearchButton();
     }
     @Test
-    public void chooseCarQuality(){
+    public void carQualityDropDownTest(){
+        homePage.searchByBodyStyleTag();
         homePage.carQualityDropDown();
         homePage.clickSearchButton();
     }
     @Test
-    public void chooseCarPrice(){
+    public void carPriceTest(){
+        homePage.searchByBodyStyleTag();
         homePage.carPrice();
         homePage.clickSearchButton();
     }
     @Test
-    public void chooseCarRadius(){
+    public void setRadiusDropDownTest(){
+        homePage.searchByBodyStyleTag();
         homePage.setRadiusDropDown();
         homePage.clickSearchButton();
     }
+
 
     @AfterMethod
     public void tearDown(){
