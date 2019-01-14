@@ -19,7 +19,7 @@ public class CarsForSalePageTest extends CommonClass {
     }
     @BeforeMethod
     // cause every test is indivisual so for verify we have to login to the homepage , so set this as before method
-    public void setUp(){
+    public void setUp() throws InterruptedException {
         initialization();
         //  util = new Util();
         logInPage =new LogInPage();
@@ -28,31 +28,33 @@ public class CarsForSalePageTest extends CommonClass {
         logInPage.clickSingIn();
         logInPage.clickLogInLink();
         homePage= logInPage.logIn(prop.getProperty("email"),prop.getProperty("password"));
+        carsForSalePage= homePage.clickOnCarsForSaleLink();
     }
-    @Test
+    @Test(priority = 1)
     public void verifyAdvancedSearchLabelTest(){
-       Assert.assertTrue( carsForSalePage.verifyAdvanceSearchLabel());
+
+        Assert.assertTrue( carsForSalePage.verifyAdvanceSearchLabel());
     }
-    @Test
+    @Test(priority = 2)
     public void verifySearchByMakeLabelTest(){
       Assert.assertTrue(carsForSalePage.verifySearchByMakeLabel());
     }
 
-    @Test
+    @Test(priority = 3)
     public void verifySearchByBodyStyleLabelTest(){
       Assert.assertTrue(carsForSalePage.verifySearchByBodyStyleLabel());
     }
-    @Test
+    @Test(priority = 4)
     public void chooseCarModuleTest(){
         carsForSalePage.chooseCarModule();
         carsForSalePage.clickOnSearchButton();
     }
-    @Test
+    @Test(priority = 5)
     public void selectUserCarDropDownTest(){
         carsForSalePage.selectUserCarDropDown();
         carsForSalePage.clickOnSearchButton();
     }
-    @Test
+    @Test(priority = 6)
     public void selectCarBrandTest(){
         carsForSalePage.selectCarBrand();
         carsForSalePage.clickOnSearchButton();

@@ -1,11 +1,12 @@
 package pages;
 
 import base.CommonAPI;
+import base.CommonClass;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class SignUpPage extends CommonAPI {
+public class SignUpPage extends CommonClass {
     @FindBy(xpath ="//a[@data-linkname='header-sign-up']")
     WebElement signUpButton;
     @FindBy(xpath ="//input[@type='text']")

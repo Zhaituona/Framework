@@ -47,7 +47,7 @@ public class HomePageTest extends CommonClass {
     }
 
     @Test
-    public void verifyCarsForSaleLinkTest(){
+    public void verifyCarsForSaleLinkTest() throws InterruptedException {
      carsForSalePage = homePage.clickOnCarsForSaleLink();
     }
     @Test

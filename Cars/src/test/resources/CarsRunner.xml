@@ -14,8 +14,12 @@
 
         <classes>
             <!--<class name="TestHome"/>-->
-            <!--<class name="search.TestSearch"/>-->
+            <class name="pagetest.CarsForSalePageTest"/>
+            <class name="pagetest.HomePageTest"/>
             <class name="pagetest.LogInPageTest"/>
+            <class name="pagetest.SellYourCarPageTest"/>
+            <class name="pagetest.SingUpPageTest"/>
+            <class name="pagetest.ServiceAndRepairPageTest"/>
             <!--<class name="search.TestSecureMemberLogIn"/>-->
         </classes>
     </test>

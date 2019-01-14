@@ -3,9 +3,11 @@ package pages;
 import base.CommonAPI;
 import base.CommonClass;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 public class HomePage extends CommonClass {
@@ -13,13 +15,13 @@ public class HomePage extends CommonClass {
     @FindBy(xpath ="//label[@id='profile_menu-avatar']")
     WebElement logInIcon;
 
-    @FindBy(xpath ="//a[contains(text(),'Cars for Sale')]")
+    @FindBy(linkText ="Cars for Sale")
     WebElement carsForSaleLink;
 
-    @FindBy(xpath="//a[contains(text(),'Sell Your Car')]")
+    @FindBy(linkText="Sell Your Car")
     WebElement sellYourCarLink;
 
-    @FindBy(xpath ="//a[contains(text(),'Service & Repair')]")
+    @FindBy(linkText ="Service & Repair")
     WebElement serviceAndRepairLink;
 
     @FindBy(xpath ="//img[contains(@class,'global-nav__logo')]")
@@ -57,6 +59,12 @@ public class HomePage extends CommonClass {
     @FindBy(name ="radius")
     WebElement nextRadius;
 
+    @FindBy(linkText = "Research")
+    WebElement researchLink;
+
+    @FindBy(linkText= "Videos & Reviews")
+    WebElement videosAndReviewsLink;
+
     public HomePage(){
         PageFactory.initElements(driver,this);
     }
@@ -69,19 +77,47 @@ public class HomePage extends CommonClass {
 
         return driver.getTitle();
     }
-    public CarsForSalePage clickOnCarsForSaleLink(){
+    public CarsForSalePage clickOnCarsForSaleLink() throws InterruptedException {
+        Actions act = new Actions(driver);
+        act.moveToElement(carsForSaleLink).perform();
         carsForSaleLink.click();
+        Thread.sleep(3000);
+        WebDriverWait wait = new WebDriverWait(driver,5);
         return new CarsForSalePage();
     }
 
-    public SellYourCarPage clickSellYourCarLink(){
+    public SellYourCarPage clickSellYourCarLink() throws InterruptedException {
+        Thread.sleep(3000);
+        Actions act = new Actions(driver);
+        act.moveToElement(sellYourCarLink).perform();
         sellYourCarLink.click();
+        //sellYourCarLink.click();
         return new SellYourCarPage();
     }
-    public ServiceAndRepairPage clickServiceAndRepairLink(){
+    public ServiceAndRepairPage clickServiceAndRepairLink() throws InterruptedException {
+        Thread.sleep(3000);
+        Actions act = new Actions(driver);
+        act.moveToElement(serviceAndRepairLink).perform();
         serviceAndRepairLink.click();
         return new ServiceAndRepairPage();
     }
+
+    public ResearchPage ResearchLink() throws InterruptedException {
+        Thread.sleep(3000);
+        Actions act = new Actions(driver);
+        act.moveToElement(researchLink).perform();
+        researchLink.click();
+        return new ResearchPage();
+    }
+    public VideosAndReviewsPage clickVideosAndReviewLink() throws InterruptedException {
+        Thread.sleep(3000);
+        Actions act = new Actions(driver);
+        act.moveToElement(videosAndReviewsLink).perform();
+        videosAndReviewsLink.click();
+        return new VideosAndReviewsPage();
+    }
+
+
 
     public void allBodyStyleDropDown() {
         Select s = new Select(allBodyDropDown);

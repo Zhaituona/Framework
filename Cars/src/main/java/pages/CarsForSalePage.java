@@ -1,11 +1,13 @@
 package pages;
 
 import base.CommonAPI;
+import base.CommonClass;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-public class CarsForSalePage extends CommonAPI {
+public class CarsForSalePage extends CommonClass {
 
     @FindBy(xpath =".ng-pristine.ng-valid.ng-not-empty.ng-touched")
     WebElement userCarDropDown;
@@ -25,15 +27,22 @@ public class CarsForSalePage extends CommonAPI {
     @FindBy(xpath ="//input[@type='submit']")
     WebElement searchButton;
 
+    public CarsForSalePage(){
+        PageFactory.initElements(driver,this);
+    }
+
     public boolean verifySearchByMakeLabel(){
-      return  searchByMakeLabel.isDisplayed();
+
+        return  searchByMakeLabel.isDisplayed();
     }
     public boolean verifySearchByBodyStyleLabel(){
+
         return searchByBodyStyleLabel.isDisplayed();
     }
 
     public boolean verifyAdvanceSearchLabel(){
-      return  advancedSearchLabel.isDisplayed();
+
+        return  advancedSearchLabel.isDisplayed();
     }
 
     public void chooseCarModule(){
