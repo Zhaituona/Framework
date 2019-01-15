@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="523c9872-1d47-4563-abaf-a9dbc280e25e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Cars/Data.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generic/src/main/java/databases/XlsxDataReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cars/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cars/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cars/src/main/java/pages/SellYourCarPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cars/src/main/java/pages/SellYourCarPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cars/src/main/java/pages/ServiceAndRepairPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cars/src/main/java/pages/ServiceAndRepairPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cars/src/main/java/pages/VideosAndReviewsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cars/src/main/java/pages/VideosAndReviewsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cars/src/test/java/pagetest/SellYourCarPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cars/src/test/java/pagetest/SellYourCarPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cars/src/test/java/pagetest/ServiceAndRepairPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cars/src/test/java/pagetest/ServiceAndRepairPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cars/src/test/java/pagetest/VideosAndReviewsPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cars/src/test/java/pagetest/VideosAndReviewsPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cars/src/test/resources/CarsRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Cars/src/test/resources/CarsRunner.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -54,13 +47,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Cars/src/main/java/pages/HomePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="219" column="42" selection-start-line="219" selection-start-column="42" selection-end-line="219" selection-end-column="42" />
+            <state relative-caret-position="-4518">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#6515#6516#0" expanded="true" />
-                <element signature="e#6564#6565#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Cars/src/test/resources/CarsRunner.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="11" column="57" lean-forward="true" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -92,18 +92,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Cars/src/test/java/pagetest/LogInPageTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Cars/src/main/java/pages/CarsForSalePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-761">
+            <state relative-caret-position="-896">
               <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -113,29 +104,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Cars/src/main/java/pages/SellYourCarPage.java">
+        <entry file="file://$PROJECT_DIR$/Cars/src/test/java/pagetest/LogInPageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="515">
-              <caret line="62" column="13" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1242#1243#0" expanded="true" />
-                <element signature="e#1267#1268#0" expanded="true" />
-                <element signature="e#1316#1317#0" expanded="true" />
-                <element signature="e#1343#1344#0" expanded="true" />
-                <element signature="e#1395#1396#0" expanded="true" />
-                <element signature="e#1425#1426#0" expanded="true" />
-                <element signature="e#1473#1474#0" expanded="true" />
-                <element signature="e#1499#1500#0" expanded="true" />
-                <element signature="e#1549#1550#0" expanded="true" />
-                <element signature="e#1577#1578#0" expanded="true" />
-                <element signature="e#1626#1627#0" expanded="true" />
-                <element signature="e#1662#1663#0" expanded="true" />
-                <element signature="e#1701#1702#0" expanded="true" />
-                <element signature="e#1727#1728#0" expanded="true" />
-                <element signature="e#1771#1772#0" expanded="true" />
-                <element signature="e#1793#1794#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="154">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -208,7 +180,6 @@
         <option value="$PROJECT_DIR$/Cars/src/test/java/pagetest/HomePageTest.java" />
         <option value="$PROJECT_DIR$/Cars/src/test/java/pagetest/CarsForSalePageTest.java" />
         <option value="$PROJECT_DIR$/Cars/src/main/java/pages/CarsForSalePage.java" />
-        <option value="$PROJECT_DIR$/Cars/src/test/resources/CarsRunner.xml" />
         <option value="$PROJECT_DIR$/Cars/src/main/java/pages/SignUpPage.java" />
         <option value="$PROJECT_DIR$/Cars/src/test/java/pagetest/SingUpPageTest.java" />
         <option value="$PROJECT_DIR$/Cars/src/main/java/pages/ResearchPage.java" />
@@ -223,6 +194,7 @@
         <option value="$PROJECT_DIR$/Cars/src/test/java/pagetest/VideosAndReviewsPageTest.java" />
         <option value="$PROJECT_DIR$/Generic/src/main/java/databases/XlsxDataReader.java" />
         <option value="$PROJECT_DIR$/Cars/src/main/java/pages/HomePage.java" />
+        <option value="$PROJECT_DIR$/Cars/src/test/resources/CarsRunner.xml" />
       </list>
     </option>
   </component>
@@ -267,7 +239,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-10" />
     <option name="width" value="980" />
     <option name="height" value="1040" />
@@ -325,46 +297,34 @@
             <path>
               <item name="Auto3" type="b2602c69:ProjectViewProjectNode" />
               <item name="Auto3" type="462c0819:PsiDirectoryNode" />
-              <item name="Generic" type="462c0819:PsiDirectoryNode" />
+              <item name="Cars" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Auto3" type="b2602c69:ProjectViewProjectNode" />
               <item name="Auto3" type="462c0819:PsiDirectoryNode" />
-              <item name="Generic" type="462c0819:PsiDirectoryNode" />
+              <item name="Cars" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Auto3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Auto3" type="462c0819:PsiDirectoryNode" />
-              <item name="Generic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Auto3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Auto3" type="462c0819:PsiDirectoryNode" />
-              <item name="Generic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Auto3" type="b2602c69:ProjectViewProjectNode" />
               <item name="Auto3" type="462c0819:PsiDirectoryNode" />
-              <item name="Generic" type="462c0819:PsiDirectoryNode" />
+              <item name="Cars" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="pagetest" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Auto3" type="b2602c69:ProjectViewProjectNode" />
               <item name="Auto3" type="462c0819:PsiDirectoryNode" />
-              <item name="Generic" type="462c0819:PsiDirectoryNode" />
+              <item name="Cars" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="databases" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -373,7 +333,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547520922835" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547527661947" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -546,7 +506,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22348994" />
@@ -563,7 +523,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.04249292" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.23371105" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3286119" />
@@ -591,7 +551,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Cars/src/main/java/pages/HomePage.java</url>
-          <line>92</line>
+          <line>93</line>
           <properties class="pages.HomePage" method="clickSellYourCarLink">
             <option name="EMULATED" value="true" />
           </properties>
@@ -668,13 +628,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="451" selection-start-line="451" selection-end-line="451" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Cars/src/test/resources/CarsRunner.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="17" column="49" lean-forward="true" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -793,16 +746,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Cars/src/main/java/pages/CarsForSalePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-761">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Cars/src/main/java/pages/SellYourCarPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="515">
@@ -916,14 +859,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Cars/src/main/java/pages/HomePage.java">
+    <entry file="file://$PROJECT_DIR$/Cars/src/test/resources/CarsRunner.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="219" column="42" selection-start-line="219" selection-start-column="42" selection-end-line="219" selection-end-column="42" />
+        <state relative-caret-position="242">
+          <caret line="11" column="57" lean-forward="true" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cars/src/main/java/pages/CarsForSalePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-896">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#6515#6516#0" expanded="true" />
-            <element signature="e#6564#6565#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cars/src/main/java/pages/HomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4518">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

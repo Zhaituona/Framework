@@ -84,7 +84,7 @@ public class HomePage extends CommonClass {
 
     public CarsForSalePage clickOnCarsForSaleLink() throws InterruptedException {
         Actions act = new Actions(driver);
-        act.moveToElement(carsForSaleLink).perform();
+        act.moveToElement(carsForSaleLink).build().perform();
         carsForSaleLink.click();
         Thread.sleep(3000);
         WebDriverWait wait = new WebDriverWait(driver, 5);
@@ -94,7 +94,7 @@ public class HomePage extends CommonClass {
     public SellYourCarPage clickSellYourCarLink() throws InterruptedException {
         Thread.sleep(3000);
         Actions act = new Actions(driver);
-        act.moveToElement(sellYourCarLink).perform();
+        act.moveToElement(sellYourCarLink).build().perform();
         sellYourCarLink.click();
         //sellYourCarLink.click();
         return new SellYourCarPage();
@@ -103,7 +103,7 @@ public class HomePage extends CommonClass {
     public ServiceAndRepairPage clickServiceAndRepairLink() throws InterruptedException {
         Thread.sleep(3000);
         Actions act = new Actions(driver);
-        act.moveToElement(serviceAndRepairLink).perform();
+        act.moveToElement(serviceAndRepairLink).build().perform();
         serviceAndRepairLink.click();
         return new ServiceAndRepairPage();
     }
@@ -111,7 +111,7 @@ public class HomePage extends CommonClass {
     public ResearchPage ResearchLink() throws InterruptedException {
         Thread.sleep(3000);
         Actions act = new Actions(driver);
-        act.moveToElement(researchLink).perform();
+        act.moveToElement(researchLink).build().perform();
         researchLink.click();
         return new ResearchPage();
     }
@@ -119,7 +119,7 @@ public class HomePage extends CommonClass {
     public VideosAndReviewsPage clickVideosAndReviewLink() throws InterruptedException {
         Thread.sleep(3000);
         Actions act = new Actions(driver);
-        act.moveToElement(videosAndReviewsLink).perform();
+        act.moveToElement(videosAndReviewsLink).build().perform();
         videosAndReviewsLink.click();
         return new VideosAndReviewsPage();
     }
