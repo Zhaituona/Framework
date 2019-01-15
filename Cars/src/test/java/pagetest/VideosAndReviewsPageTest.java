@@ -31,6 +31,7 @@ public class VideosAndReviewsPageTest extends CommonClass {
         videosAndReviewsPage= homePage.clickVideosAndReviewLink();
     }
 
+
     @Test
     public void searchItemAndClickEnterTest() throws Exception {
         videosAndReviewsPage.searchItemAndClickEnter();
@@ -45,6 +46,10 @@ public class VideosAndReviewsPageTest extends CommonClass {
     public void verifySendMeTheLatesButtonTest(){
         boolean verify = videosAndReviewsPage.verifySendMeTheLatesButton();
         Assert.assertTrue(verify);
+    }
+    @Test
+    public void clickSeeAllLinkTest(){
+        videosAndReviewsPage.clickSeeAllLink();
     }
     @AfterMethod
     public void tearDown(){

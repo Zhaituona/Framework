@@ -2,6 +2,7 @@ package pages;
 
 import base.CommonAPI;
 import base.CommonClass;
+import databases.XlsxDataReader;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -10,79 +11,83 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class HomePage extends CommonClass {
 
-    @FindBy(xpath ="//label[@id='profile_menu-avatar']")
+    @FindBy(xpath = "//label[@id='profile_menu-avatar']")
     WebElement logInIcon;
 
-    @FindBy(linkText ="Cars for Sale")
+    @FindBy(linkText = "Cars for Sale")
     WebElement carsForSaleLink;
 
-    @FindBy(linkText="Sell Your Car")
+    @FindBy(linkText = "Sell Your Car")
     WebElement sellYourCarLink;
 
-    @FindBy(linkText ="Service & Repair")
+    @FindBy(linkText = "Service & Repair")
     WebElement serviceAndRepairLink;
 
-    @FindBy(xpath ="//img[contains(@class,'global-nav__logo')]")
+    @FindBy(xpath = "//img[contains(@class,'global-nav__logo')]")
     WebElement carsLogo;
 
-    @FindBy(name ="stockType")
+    @FindBy(name = "stockType")
     WebElement NewNUsedCarDropDown;
 
-    @FindBy(name ="makeId")
+    @FindBy(name = "makeId")
     WebElement carMakeDropDown;
 
-    @FindBy(name ="modelId")
+    @FindBy(name = "modelId")
     WebElement carModelDropDown;
 
-    @FindBy(name ="priceMax")
+    @FindBy(name = "priceMax")
     WebElement priceDropDown;
 
-    @FindBy(name ="radius")
+    @FindBy(name = "radius")
     WebElement radiusDropDown;
-    @FindBy(xpath ="//input[@value='Search']")
+    @FindBy(xpath = "//input[@value='Search']")
     WebElement searchButton;
 
-    @FindBy(xpath ="//*[@id=\'root\']/div[2]/section[2]/div[2]/form/ul/li[2]/label")
+    @FindBy(xpath = "//*[@id=\'root\']/div[2]/section[2]/div[2]/form/ul/li[2]/label")
     WebElement searchByBodyStyle;
 
-    @FindBy(name="bodyStyle")
+    @FindBy(name = "bodyStyle")
     WebElement allBodyDropDown;
 
-    @FindBy(name ="stockType")
+    @FindBy(name = "stockType")
     WebElement carType;
 
-    @FindBy(name= "priceMax")
+    @FindBy(name = "priceMax")
     WebElement carPriceDropDown;
 
-    @FindBy(name ="radius")
+    @FindBy(name = "radius")
     WebElement nextRadius;
 
     @FindBy(linkText = "Research")
     WebElement researchLink;
 
-    @FindBy(linkText= "Videos & Reviews")
+    @FindBy(linkText = "Videos & Reviews")
     WebElement videosAndReviewsLink;
 
-    public HomePage(){
-        PageFactory.initElements(driver,this);
+    public HomePage() {
+        PageFactory.initElements(driver, this);
     }
 
-    public boolean verifyLogInIcon(){
-       return logInIcon.isDisplayed();
+    public boolean verifyLogInIcon() {
+        return logInIcon.isDisplayed();
     }
 
-    public String verifyHomePageTitle(){
+    public String verifyHomePageTitle() {
 
         return driver.getTitle();
     }
+
     public CarsForSalePage clickOnCarsForSaleLink() throws InterruptedException {
         Actions act = new Actions(driver);
         act.moveToElement(carsForSaleLink).perform();
         carsForSaleLink.click();
         Thread.sleep(3000);
-        WebDriverWait wait = new WebDriverWait(driver,5);
+        WebDriverWait wait = new WebDriverWait(driver, 5);
         return new CarsForSalePage();
     }
 
@@ -94,6 +99,7 @@ public class HomePage extends CommonClass {
         //sellYourCarLink.click();
         return new SellYourCarPage();
     }
+
     public ServiceAndRepairPage clickServiceAndRepairLink() throws InterruptedException {
         Thread.sleep(3000);
         Actions act = new Actions(driver);
@@ -109,6 +115,7 @@ public class HomePage extends CommonClass {
         researchLink.click();
         return new ResearchPage();
     }
+
     public VideosAndReviewsPage clickVideosAndReviewLink() throws InterruptedException {
         Thread.sleep(3000);
         Actions act = new Actions(driver);
@@ -116,7 +123,6 @@ public class HomePage extends CommonClass {
         videosAndReviewsLink.click();
         return new VideosAndReviewsPage();
     }
-
 
 
     public void allBodyStyleDropDown() {
@@ -128,19 +134,21 @@ public class HomePage extends CommonClass {
         }
     }
 
-    public void carQualityDropDown(){
+    public void carQualityDropDown() {
         Select s = new Select(carType);
-        for(int k=1; k<3;k++){
+        for (int k = 1; k < 3; k++) {
             carType.click();
         }
     }
-    public void carPrice(){
+
+    public void carPrice() {
         Select s = new Select(carPriceDropDown);
         s.selectByValue("35000");
         boolean isSelected = carPriceDropDown.isSelected();
         Assert.assertTrue(isSelected);
     }
-    public void setRadiusDropDown(){
+
+    public void setRadiusDropDown() {
         Select s = new Select(nextRadius);
         s.selectByVisibleText("40 Miles from");
         boolean isSelect = nextRadius.isSelected();
@@ -148,37 +156,85 @@ public class HomePage extends CommonClass {
     }
 
 
-    public void searchByBodyStyleTag(){
+    public void searchByBodyStyleTag() {
 
         searchByBodyStyle.click();
     }
 
     public void carTypeDropDown() throws InterruptedException {
-       Select s = new Select(NewNUsedCarDropDown);
-       s.selectByValue("28880");
-       Thread.sleep(3000);
+        Select s = new Select(NewNUsedCarDropDown);
+        s.selectByValue("28880");
+        Thread.sleep(3000);
     }
-    public void carMakeDropDown(){
+
+    public void carMakeDropDown() {
         Select s = new Select(carMakeDropDown);
         s.selectByVisibleText("Aston Martin");
     }
-    public void carModelIdDropDown(){
+
+    public void carModelIdDropDown() {
         Select s = new Select(carModelDropDown);
         s.selectByIndex(1);
     }
-    public void carPriceDropDown(){
+
+    public void carPriceDropDown() {
         Select s = new Select(priceDropDown);
         s.selectByValue("35000");
     }
-    public void radioDropDown(){
+
+    public void radioDropDown() {
         Select s = new Select(radiusDropDown);
         s.selectByVisibleText("40 Miles from");
     }
-    public void clickSearchButton(){
+
+    public void clickSearchButton() {
         searchButton.click();
     }
-    public boolean validateCarsImage(){
+
+    public boolean validateCarsImage() {
 
         return carsLogo.isDisplayed();
+    }
+
+    public List webElementLit() {
+        List<WebElement> webElements = new ArrayList<>();
+        webElements.add(logInIcon);
+        webElements.add(carsForSaleLink);
+        webElements.add(sellYourCarLink);
+        webElements.add(serviceAndRepairLink);
+        webElements.add(carsLogo);
+        webElements.add(NewNUsedCarDropDown);
+        webElements.add(carMakeDropDown);
+        webElements.add(carModelDropDown);
+        webElements.add(priceDropDown);
+        webElements.add(radiusDropDown);
+        webElements.add(searchButton);
+        webElements.add(searchByBodyStyle);
+        webElements.add(allBodyDropDown);
+        webElements.add(carType);
+        webElements.add(carPriceDropDown);
+        webElements.add(nextRadius);
+        webElements.add(researchLink);
+        webElements.add(videosAndReviewsLink);
+
+        List<String> list = new ArrayList<>();
+        for (int i = 0; i < webElements.size(); i++) {
+            list.add(webElements.get(i).getText());
+        }
+        System.out.println(list);
+        return list;
+    }
+
+    XlsxDataReader xlData = new XlsxDataReader("C:\\Users\\Elzat\\IdeaProjects\\Auto3\\Cars\\Data.xlsx");
+
+    public List expectedWebElement() {
+        int rowCount = xlData.getRowCount("Sheet1");
+        List<String> expect = new ArrayList<>();
+        for (int i = 2; i <= rowCount; i++) {
+            expect.add(xlData.getCellData("Sheet1", "WebElementName", i));
+
+        }
+        System.out.println(expect);
+        return expect;
     }
 }

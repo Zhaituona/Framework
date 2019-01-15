@@ -51,6 +51,22 @@ public class ServiceAndRepairPageTest extends CommonClass {
         boolean verify = serviceAndRepairPage.verifyFindAServiceCenterButton();
         Assert.assertTrue(verify);
     }
+    @Test
+    public void clickFindAServiceCenterButtonTest(){
+        serviceAndRepairPage.clickFindAServiceCenterButton();
+    }
+    @Test
+    public void clickLearnHowToLinkTest(){
+        serviceAndRepairPage.clickLearnHowToLink();
+    }
+    @Test
+    public void clickSearchRecallLinkTest(){
+        serviceAndRepairPage.clickSearchRecallLink();
+    }
+    @Test
+    public void clickServiceAndRepairAdviceLinkTest(){
+        serviceAndRepairPage.clickServiceAndRepairAdviceLink();
+    }
 
 
 

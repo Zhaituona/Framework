@@ -27,6 +27,12 @@ public class VideosAndReviewsPage extends CommonClass {
 
      @FindBy(xpath ="//button[@class ='editorialEmail-button']")
      WebElement sendMeTheLatesButton;
+     @FindBy(linkText = "See all")
+     WebElement seeAllLink;
+
+     public void clickSeeAllLink(){
+         seeAllLink.click();
+     }
 
      public boolean verifySendMeTheLatesButton(){
          return sendMeTheLatesButton.isDisplayed();

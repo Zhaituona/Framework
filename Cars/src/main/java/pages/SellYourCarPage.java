@@ -39,6 +39,32 @@ public class SellYourCarPage extends CommonClass {
  @FindBy(xpath ="//a[contains(text(),'Learn More')]")
  WebElement learnMoreLink;
 
+ public void clickStartSellingLink(){
+     startSellingLink.click();
+ }
+ public void clickViewYourOffersLink(){
+     viewYourOffersLink.click();
+ }
+ public void clickCreateYourListingLink(){
+     createYourListingLink.click();
+ }
+ public void clickGetAnEstimateLink(){
+     getAnEstimateLink.click();
+ }
+ public void clickSellYourJunkCarLink(){
+     sellYourJunkCarLink.click();
+ }
+ public void clickLearnHowToSellLink(){
+     learnHowToSellLink.click();
+ }
+ public void clickStartShoppingLink(){
+     startShoppingLink.click();
+ }
+ public void clickLearnMoreLink(){
+     learnMoreLink.click();
+ }
+
+
  public boolean verifyLearnMoreLink (){
      return learnMoreLink.isDisplayed();
  }
@@ -58,7 +84,7 @@ public class SellYourCarPage extends CommonClass {
      return getAnEstimateLink.isDisplayed();
  }
 
-    public boolean verifyCreateYourListingLink(){
+ public boolean verifyCreateYourListingLink(){
         return createYourListingLink.isDisplayed();
     }
 

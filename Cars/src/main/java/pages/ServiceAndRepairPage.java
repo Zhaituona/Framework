@@ -24,6 +24,19 @@ public class ServiceAndRepairPage  extends CommonClass {
     @FindBy(xpath="//a[contains(text(),'Find a Service Center')]")
     WebElement findAServiceCenterButton;
 
+    public void clickFindAServiceCenterButton(){
+        findAServiceCenterButton.click();
+    }
+    public void clickLearnHowToLink(){
+        learnHowToLink.click();
+    }
+    public void clickSearchRecallLink(){
+        searchRecallLink.click();
+    }
+    public void clickServiceAndRepairAdviceLink(){
+        serviceAndRepairAdviceLink.click();
+    }
+
     public boolean verifyFindAServiceCenterButton(){
         return findAServiceCenterButton.isDisplayed();
     }

@@ -1,6 +1,8 @@
 package pagetest;
 
 import base.CommonClass;
+import groovy.transform.SelfType;
+import org.apache.commons.lang3.builder.ToStringExclude;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -83,6 +85,40 @@ public class SellYourCarPageTest extends CommonClass {
     public void verifyReadAllCarBuyingAdviceButtonTest() throws InterruptedException {
         boolean verify=  sellYourCarPage.verifyReadAllCarBuyingAdviceButton();
         Assert.assertTrue(verify);
+    }
+
+    @Test
+    public void clickStartSellingLinkTest(){
+        sellYourCarPage.clickStartSellingLink();
+    }
+    @Test
+    public void clickViewYourOffersLinkTest(){
+        sellYourCarPage.clickViewYourOffersLink();
+    }
+    @Test
+    public void clickCreateYourListingLinkTest(){
+        sellYourCarPage.clickCreateYourListingLink();
+    }
+    @Test
+    public void clickGetAnEstimateLinkTest(){
+        sellYourCarPage.clickGetAnEstimateLink();
+    }
+    @Test
+    public void clickSellYourJunkCarLinkTest(){
+        sellYourCarPage.clickSellYourJunkCarLink();
+    }
+    @Test
+    public void clickLearnHowToSellLinkTest(){
+        sellYourCarPage.clickLearnHowToSellLink();
+    }
+
+    @Test
+    public void clickStartShoppingLinkTest(){
+        sellYourCarPage.clickStartShoppingLink();
+    }
+    @Test
+    public void clickLearnMoreLinkTest(){
+        sellYourCarPage.clickLearnMoreLink();
     }
 
     @AfterMethod
