@@ -7,7 +7,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.LogInPage;
-import pages.SellYourCarPage;
 import pages.VideosAndReviewsPage;
 
 public class VideosAndReviewsPageTest extends CommonClass {

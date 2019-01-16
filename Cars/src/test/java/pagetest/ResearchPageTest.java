@@ -8,7 +8,6 @@ import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.LogInPage;
 import pages.ResearchPage;
-import pages.SellYourCarPage;
 
 public class ResearchPageTest extends CommonClass {
 

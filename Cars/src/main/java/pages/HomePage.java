@@ -1,7 +1,6 @@
 package pages;
 
 import base.CommonClass;
-import databases.XlsDataReader;
 import databases.XlsxDataReader;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;

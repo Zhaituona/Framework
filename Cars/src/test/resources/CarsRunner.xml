@@ -3,7 +3,7 @@
 
 <suite name="Amazon Automation Script " parallel="false">
     <listeners>
-        <listener class-name="ExtentReportListener.ExtentReportListener"/>
+        <listener class-name="ExtendReportListener.ExtentReportListener"/>
     </listeners>
 
     <!--<parameter name="useCloudEnv" value="false"/>-->

@@ -1,12 +1,9 @@
 package pages;
 
-import base.CommonAPI;
 import base.CommonClass;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
-import java.nio.file.WatchEvent;
 
 public class SellYourCarPage extends CommonClass {
 

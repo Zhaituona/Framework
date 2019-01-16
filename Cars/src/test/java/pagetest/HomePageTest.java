@@ -1,9 +1,6 @@
 package pagetest;
 
 import base.CommonClass;
-import base.Util;
-import org.openqa.selenium.support.PageFactory;
-import org.openxmlformats.schemas.presentationml.x2006.main.impl.CTTLCommonMediaNodeDataImpl;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
