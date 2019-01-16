@@ -12,6 +12,8 @@ import pages.CarsForSalePage;
 import pages.HomePage;
 import pages.LogInPage;
 
+import java.util.List;
+
 public class HomePageTest extends CommonClass {
     HomePage homePage;
     LogInPage logInPage;
@@ -29,6 +31,13 @@ public class HomePageTest extends CommonClass {
         logInPage.clickSingIn();
         logInPage.clickLogInLink();
         homePage= logInPage.logIn(prop.getProperty("email"),prop.getProperty("password"));
+    }
+
+    @Test
+    public void webElementListTest(){
+        List actual = homePage.webElementList();
+        List expected = homePage.expectedWebElementXlsx();
+        Assert.assertEquals(actual,expected);
     }
     @Test
     public void verifyHomePageTitleTest(){

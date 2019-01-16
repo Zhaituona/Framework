@@ -1,7 +1,7 @@
 package pages;
 
-import base.CommonAPI;
 import base.CommonClass;
+import databases.XlsDataReader;
 import databases.XlsxDataReader;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -85,16 +85,17 @@ public class HomePage extends CommonClass {
     public CarsForSalePage clickOnCarsForSaleLink() throws InterruptedException {
         Actions act = new Actions(driver);
         act.moveToElement(carsForSaleLink).build().perform();
-        carsForSaleLink.click();
         Thread.sleep(3000);
+        carsForSaleLink.click();
         WebDriverWait wait = new WebDriverWait(driver, 5);
         return new CarsForSalePage();
     }
 
     public SellYourCarPage clickSellYourCarLink() throws InterruptedException {
-        Thread.sleep(3000);
+
         Actions act = new Actions(driver);
         act.moveToElement(sellYourCarLink).build().perform();
+        Thread.sleep(3000);
         sellYourCarLink.click();
         //sellYourCarLink.click();
         return new SellYourCarPage();
@@ -117,9 +118,9 @@ public class HomePage extends CommonClass {
     }
 
     public VideosAndReviewsPage clickVideosAndReviewLink() throws InterruptedException {
-        Thread.sleep(3000);
         Actions act = new Actions(driver);
         act.moveToElement(videosAndReviewsLink).build().perform();
+        Thread.sleep(3000);
         videosAndReviewsLink.click();
         return new VideosAndReviewsPage();
     }
@@ -196,7 +197,7 @@ public class HomePage extends CommonClass {
         return carsLogo.isDisplayed();
     }
 
-    public List webElementLit() {
+    public List webElementList() {
         List<WebElement> webElements = new ArrayList<>();
         webElements.add(logInIcon);
         webElements.add(carsForSaleLink);
@@ -225,13 +226,13 @@ public class HomePage extends CommonClass {
         return list;
     }
 
-    XlsxDataReader xlData = new XlsxDataReader("C:\\Users\\Elzat\\IdeaProjects\\Auto3\\Cars\\Data.xlsx");
+    XlsxDataReader xlxData = new XlsxDataReader("C:\\Users\\Elzat\\IdeaProjects\\Auto3\\Cars\\CarsData.xlsx");
 
-    public List expectedWebElement() {
-        int rowCount = xlData.getRowCount("Sheet1");
+    public List expectedWebElementXlsx() {
+        int rowCount = xlxData.getRowCount("Sheet1");
         List<String> expect = new ArrayList<>();
-        for (int i = 2; i <= rowCount; i++) {
-            expect.add(xlData.getCellData("Sheet1", "WebElementName", i));
+        for (int i = 1; i <= rowCount; i++) {
+            expect.add(xlxData.getData(0,i,0));
 
         }
         System.out.println(expect);

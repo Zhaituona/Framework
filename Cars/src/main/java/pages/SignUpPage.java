@@ -21,6 +21,25 @@ public class SignUpPage extends CommonClass {
     @FindBy(xpath ="/html/body/div[2]/section/cars-profiles-lsp/cui-tabs/div/ul[2]/li[2]/div/cars-signup-form/div/div[3]/form/button")
     WebElement signUpClick;
 
+    @FindBy(xpath ="//p[@class='alert__desc ng-binding ng-scope']")
+    WebElement errorMassage;
+
+    public String invalidEmailSignIn(){
+        emailField.sendKeys("zana128");
+        passwordField.sendKeys("zana195726");
+        confirmPasswordField.sendKeys("zana195726");
+        signUpClick.click();
+        String text = errorMassage.getText();
+        return text;
+    }
+
+    public String withoutPasswordSignIn(){
+        emailField.sendKeys("zaytuna128@gmail.com");
+        signUpClick.click();
+        String text = errorMassage.getText();
+        return text;
+    }
+
     public SignUpPage(){
 
         PageFactory.initElements(driver,this);

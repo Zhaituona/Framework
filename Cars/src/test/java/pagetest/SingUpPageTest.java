@@ -2,6 +2,7 @@ package pagetest;
 
 import base.CommonClass;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -30,6 +31,16 @@ public class SingUpPageTest extends CommonClass {
     public void userSingIn(){
         signUpPage.clickSignUpButton();
        homePage=signUpPage.singIn();
+    }
+    @Test
+    public void  invalidEmailSignInTest(){
+     String errorMassage=  signUpPage.invalidEmailSignIn();
+        Assert.assertEquals(errorMassage,"Please enter your email address.");
+    }
+    @Test
+    public void withoutPasswordSignInTest(){
+        String errorMassage = signUpPage.withoutPasswordSignIn();
+        Assert.assertEquals(errorMassage,"Please enter your password.");
     }
 
     @AfterMethod
