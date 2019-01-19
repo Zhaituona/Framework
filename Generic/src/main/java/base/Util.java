@@ -16,9 +16,9 @@ public class Util extends CommonClass {
 
 
     public static long PAGE_LOAD_TIMEOUT=20;
-    public static long IMPLiCIT_WAIT =10;
+    public static long IMPLiCIT_WAIT =20;
 
-    public static String TESTDATA_SHEET_PATH ="C:\\Users\\Elzat\\IdeaProjects\\Auto3\\Cars\\Data.xlsx";
+    public static String TESTDATA_SHEET_PATH ="C:\\Users\\Elzat\\IdeaProjects\\Auto3\\Cars\\dataProvide.xlsx";
     static Workbook book;
     static Sheet sheet;
     static JavascriptExecutor js;

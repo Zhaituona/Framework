@@ -52,6 +52,13 @@ public class SignUpPage extends CommonClass {
         return new HomePage();
     }
 
+    public void createNewAccount(String email,String password,String confirmPassword){
+        emailField.sendKeys(email);
+        passwordField.sendKeys(password);
+        confirmPasswordField.sendKeys(confirmPassword);
+        signUpClick.click();
+    }
+
     public void clickSignUpButton(){
 
         signUpButton.click();

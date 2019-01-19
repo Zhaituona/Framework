@@ -17,14 +17,14 @@
 
         <classes>
             <!--<class name="TestHome"/>-->
-            <class name="pagetest.LogInPageTest"/>
-            <class name="pagetest.HomePageTest"/>
-            <class name="pagetest.CarsForSalePageTest"/>
-            <class name="pagetest.SellYourCarPageTest"/>
+            <!--<class name="pagetest.LogInPageTest"/>-->
+            <!--<class name="pagetest.HomePageTest"/>-->
+            <!--<class name="pagetest.CarsForSalePageTest"/>-->
+            <!--<class name="pagetest.SellYourCarPageTest"/>-->
             <class name="pagetest.SingUpPageTest"/>
-            <class name="pagetest.ServiceAndRepairPageTest"/>
-            <class name="pagetest.ResearchPageTest"/>
-            <class name="pagetest.VideosAndReviewsPageTest"/>
+            <!--<class name="pagetest.ServiceAndRepairPageTest"/>-->
+            <!--<class name="pagetest.ResearchPageTest"/>-->
+            <!--<class name="pagetest.VideosAndReviewsPageTest"/>-->
             <!--<class name="search.TestSecureMemberLogIn"/>-->
         </classes>
     </test>
