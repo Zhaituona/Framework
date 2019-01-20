@@ -3,6 +3,7 @@ package pagetest;
 import base.CommonClass;
 import base.Util;
 import dataXles.MyDataReader;
+import googleSheet.GoogleSheetReader;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -12,6 +13,8 @@ import pages.HomePage;
 import pages.SignUpPage;
 
 import java.io.File;
+import java.io.IOException;
+import java.util.List;
 
 public class SingUpPageTest extends CommonClass {
     HomePage homePage;
@@ -54,17 +57,30 @@ public class SingUpPageTest extends CommonClass {
         signUpPage.createNewAccount(email,password,confirmPassword);
     }
     @Test(priority = 3)
+    public void createNewAccountTestByGoogleSheetApi() throws IOException {
+        String spreadsheetId = "12RL0lnf1tmUzyM9_xkKPm7EWjK2vx0hBB_ly74LN4TY";
+        String range = "Sheet1!A2:C";// it means read from A to D,
+        List<List<Object>> getRecords = GoogleSheetReader.getSpreadSheetRecords(spreadsheetId,range);
+        for(List cell : getRecords){
+            signUpPage.clickSignUpButton();
+            signUpPage.createNewAccount(cell.get(0).toString(),cell.get(1).toString(),cell.get(2).toString());
+        }
+
+    }
+
+
+    @Test(priority = 4)
     public void userSingIn(){
         signUpPage.clickSignUpButton();
        homePage=signUpPage.singIn();
     }
-    @Test(priority = 4)
+    @Test(priority = 5)
     public void  invalidEmailSignInTest(){
         signUpPage.clickSignUpButton();
         String errorMassage=  signUpPage.invalidEmailSignIn();
         Assert.assertEquals(errorMassage,"Please enter your email address.");
     }
-    @Test(priority = 5)
+    @Test(priority = 6)
     public void withoutPasswordSignInTest(){
         signUpPage.clickSignUpButton();
         String errorMassage = signUpPage.withoutPasswordSignIn();
